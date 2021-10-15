@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    apache:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: cve-2021-41773-poc
+        ports: 
+            - 1234:80
